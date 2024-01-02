@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road Detection App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        #image-input {
+            margin-bottom: 20px;
+        }
+
+        #output-container {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Road Detection App</h1>
+
+    <input type="file" id="image-input" accept="image/*">
+    <div id="output-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/deeplab"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
